@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Pushster&family=Roboto+Condensed:wght@400;700&family=Waterfall&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(10, 2, 39);
+    color: green;
+}
+.container{
+    border: solid 2px green;
+    background-color: black;
+    height: 80vh;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 5%;
+    border-radius: 25px;
+}
+.container header{
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .SongInfo{
+    height: 50%;
+    width: 100%;
+    padding: 4%;
+    margin-top: 15%;
+    position: relative;
+}
+.container .SongInfo .picAvatar{
+    height: 200px;
+    width: 200px;
+    left: 15%;
+    right: 10%;
+    border-radius: 50%;
+    background-color: goldenrod;
+    position: absolute;
+}
+.picAvatar img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+h3{
+text-align: center;
+    text-align: center;
+    margin-top: 80%;
+}
+h5{
+text-align: center;
+}
+.container .playNextPrev{
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.container .playNextPrev i{
+    font-size: 25px;
+    color: green;
+}
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+/* media query */
+@media (max-width: 799px) {
+    .container{
+        border: solid 2px green;
+        height: 80vh;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+        border-radius: 25px;
+    }
+}
