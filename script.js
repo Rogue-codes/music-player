@@ -102,3 +102,25 @@ function prevSong(){
 
     audioplayer.play()
 }
+
+
+audioplayer.addEventListener('ended', playNext)
+
+function playNext(){
+    counter++
+    if(counter == allSongs.leghth){
+        counter = 0
+        playSong(counter)
+    }else{
+        playSong(counter)
+    }
+    audioplayer.src = allSongs[counter].song
+
+    artiste.innerText = allSongs[counter].musician
+
+    music.innerText = allSongs[counter].title
+
+    image.src = allSongs[counter].poster
+
+    audioplayer.play()
+}

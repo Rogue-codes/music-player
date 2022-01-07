@@ -6,20 +6,23 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: rgb(10, 2, 39);
+    background-color: rgb(10, 5, 29);
     color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 .container{
     border: solid 2px green;
     background-color: black;
     height: 80vh;
-    width: 20%;
-    margin-left: 40%;
-    margin-top: 5%;
+    width: 80%;
+    position: relative;
     border-radius: 25px;
 }
 .container header{
-    padding: 10%;
+    padding: 2% 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,16 +31,19 @@ body{
     height: 50%;
     width: 100%;
     padding: 4%;
-    margin-top: 15%;
-    position: relative;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .container .SongInfo .picAvatar{
     height: 200px;
     width: 200px;
-    left: 15%;
-    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    background-color: goldenrod;
     position: absolute;
 }
 .picAvatar img{
@@ -49,16 +55,16 @@ body{
 h3{
 text-align: center;
     text-align: center;
-    margin-top: 80%;
+    margin-top: 40%;
 }
 h5{
 text-align: center;
 }
 .container .playNextPrev{
-    margin-top: 15%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
 }
 .container .playNextPrev i{
@@ -76,8 +82,15 @@ button{
         border: solid 2px green;
         height: 80vh;
         width: 90%;
-        margin-left: 5%;
-        margin-top: 5%;
         border-radius: 25px;
+    }
+    h3{
+        text-align: center;
+        text-align: center;
+        margin-top: 90%;
+    }
+    .container .SongInfo{
+        justify-content: space-between;
+            
     }
 }
