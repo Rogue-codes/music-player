@@ -94,3 +94,8 @@ button{
             
     }
 }
+@media (max-width: 480px) {
+    .container .playNextPrev{
+        margin-top: 50%;
+    }
+}
