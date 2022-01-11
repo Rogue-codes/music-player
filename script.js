@@ -37,6 +37,12 @@ let allSongs = [
         title: 'Ozumba Mbadiwe',
         song:'Reekado_Banks_Ozumba_Mbadiwe_9jaflaver.com_ (1).mp3',
         poster:'p5.jpg'
+    },
+    m5={
+        musician: 'Larry_Gaaga_Egedege_Ft_Phyno_Flavour_And_Theresa_Onuorah',
+        title: 'Egedege',
+        song:'Larry_Gaaga_Egedege_Ft_Phyno_Flavour_And_Theresa_Onuorah_9jaflaver.com_.mp3',
+        poster:'p6.jpeg'
     }
 ]
 
@@ -108,7 +114,7 @@ audioplayer.addEventListener('ended', playNext)
 
 function playNext(){
     counter++
-    if(counter == allSongs.leghth){
+    if(counter == allSongs.length){
         counter = 0
         playSong(counter)
     }else{
@@ -124,3 +130,10 @@ function playNext(){
 
     audioplayer.play()
 }
+
+
+let loader = document.getElementById('loader')
+
+window.addEventListener('load', () => {
+    loader.style.display = 'none'
+})
